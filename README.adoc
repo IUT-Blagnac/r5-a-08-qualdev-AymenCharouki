@@ -8,7 +8,6 @@ Ce dépôt concerne les rendus de mailto:aymen.charouki@etu.univ-tlse2.fr[CHAROU
 
 .Contenu du fichier is_it_friday_yet.feature
 [source,cucumber]
----
 Feature: Est-ce déjà vendredi ?
     Scenario Outline: Vérifier si c'est vendredi
         Given aujourd'hui c'est "<day>"
@@ -21,7 +20,6 @@ Feature: Est-ce déjà vendredi ?
         | dimanche       | Non    |
         | lundi          | Non    |
         | anything else! | Non    |
----
 
 
 image::TP1-TestsExec.png[]
