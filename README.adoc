@@ -17,6 +17,6 @@ public void today_is_sunday() {
 ---
 
 .Exemple d'image insérée en asciidoc
-image::artifacts-r303.svg[width=80%]
+image::TP1-TestsExec.png
 
 == TP2...
