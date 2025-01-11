@@ -1,22 +1,29 @@
-= R5.A.08 -- Dépôt pour les TPs
+= R5.A.08 -- Dépôt pour les TPs - CHAROUKI AYMEN 2A
 :icons: font
 :MoSCoW: https://fr.wikipedia.org/wiki/M%C3%A9thode_MoSCoW[MoSCoW]
 
-Ce dépôt concerne les rendus de mailto:A_changer@etu.univ-tlse2.fr[Jonh Doe].
+Ce dépôt concerne les rendus de mailto:aymen.charouki@etu.univ-tlse2.fr[CHAROUKI AYMEN].
 
 == TP1
 
-.Exemple de code
-[source,java]
+.Contenu du fichier is_it_friday_yet.feature
+[source,cucumber]
 ---
-@Given("today is Sunday")
-public void today_is_sunday() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
+Feature: Est-ce déjà vendredi ?
+    Scenario Outline: Vérifier si c'est vendredi
+        Given aujourd'hui c'est "<day>"
+        When je demande si c'est déjà vendredi
+        Then on devrait me dire "<answer>"
+
+    Examples:
+        | day            | answer |
+        | vendredi       | Oui    |
+        | dimanche       | Non    |
+        | lundi          | Non    |
+        | anything else! | Non    |
 ---
 
-.Exemple d'image insérée en asciidoc
-image::TP1-TestsExec.png
+
+image::TP1-TestsExec.png[]
 
 == TP2...
