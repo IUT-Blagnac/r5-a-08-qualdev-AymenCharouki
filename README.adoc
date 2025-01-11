@@ -6,21 +6,26 @@ Ce dépôt concerne les rendus de mailto:aymen.charouki@etu.univ-tlse2.fr[CHAROU
 
 == TP1
 
-.Contenu du fichier is_it_friday_yet.feature
-[source,cucumber]
+=== Contenu du fichier is_it_friday_yet.feature
+
+[source,gherkin]
+----
 Feature: Est-ce déjà vendredi ?
-    Scenario Outline: Vérifier si c'est vendredi
-        Given aujourd'hui c'est "<day>"
-        When je demande si c'est déjà vendredi
-        Then on devrait me dire "<answer>"
 
-    Examples:
-        | day            | answer |
-        | vendredi       | Oui    |
-        | dimanche       | Non    |
-        | lundi          | Non    |
-        | anything else! | Non    |
+  Scenario Outline: Vérifier si c'est vendredi
+    Given aujourd'hui c'est "<day>"
+    When je demande si c'est déjà vendredi
+    Then on devrait me dire "<answer>"
 
+  Examples:
+    | day            | answer |
+    | vendredi       | Oui    |
+    | dimanche       | Non    |
+    | lundi          | Non    |
+    | anything else! | Non    |
+----
+
+=== Résultats des Tests : 
 
 image::TP1-TestsExec.png[]
 
