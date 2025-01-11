@@ -244,3 +244,21 @@ La calculatrice a été créée il y a quelque temps en utilisant Python et Tkin
 === Résultats des Tests : 
 
 image::TP3-TestsExec.png[]
+
+== TP4
+
+=== mvn test | Select-Object -Last 16 | Out-File report.txt (windows)
+
+[source,shell]
+----
+include::report.txt
+----
+
+=== mvn cukedoctor:execute
+
+image::tp4-html-report1.png[]
+image::tp4-html-report2.png[]
+
+=== SERENITY
+
+Je n'ai pas réussi à faire générer le site sur mon projet.
