@@ -251,7 +251,7 @@ image::TP3-TestsExec.png[]
 
 [source,shell]
 ----
-include::report.txt
+include::report.txt[]
 ----
 
 === mvn cukedoctor:execute
